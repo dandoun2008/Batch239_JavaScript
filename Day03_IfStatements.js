@@ -69,3 +69,21 @@ if("javascript"){
 }else{
   console.log('false');
 } //"true"
+
+if(" "){
+ console.log('true');
+}else{ 
+  console.log('false');
+} //"true"
+
+if("0"){
+ console.log('true');
+}else{
+  console.log('false');
+} //"true"
+
+/*
+IMPORTANT NOTE:
+0, FALSE, null, undefined, "" (empty string), NaN (Not a Number) ==> considered as FALSE.
+All other values are TRUE
+*/
