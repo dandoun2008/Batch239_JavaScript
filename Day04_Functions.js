@@ -41,6 +41,7 @@ function addNumbers(num1=2,num2=3,num3=4){
   
   console.log(addNumbers()); //Using default values that were defined in the function parameter 2+3+4=9
   console.log(addNumbers(5,6,7)); //Overwriting num1=5, num2=6, num3=7 ==> 18
+  console.log(addNumbers(4,5,6,7)); //7 will be ignored because there is no matching parameter: num1=4, num2=5, num3=6 ==> 15
   
 /*
 FUNCTIONS:
@@ -56,6 +57,9 @@ function add(x,y){
   console.log(x + y)
 }
 
+//calling the function
+add(4,6); //10
+
 //function = keyword, add = name of the function
 //anonymous function: function WITHOUT a name ==> this is a commen practice recently
 //we can declare anonymous function and put it in a variable
@@ -67,6 +71,8 @@ var sum = function(x,y){
 sum(); //NaN
 sum(7,8); //15
 sum(7,8,9); //15
+console.log(sum); //function (x,y){window.runnerWindow.proxyConsole.log(x+y);} ==> printing the function itself
+console.log(sum(4,5)); //9  and  undefined ==> here it assigned the value of sum(4,5) first
 
 //create anonymous function with 3 parameters
 //then put the result in a variable named total
